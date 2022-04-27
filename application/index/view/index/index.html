@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+		
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>	
+<script src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>	
+<script src="__CDN__/static/js/md5.min.js" charset="utf-8"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.10/clipboard.js"></script>	
+<script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.js"></script>
+<!--<script src="__CDN__/static/js/customI18n.js"  charset="utf-8"></script>-->
+		<link rel="stylesheet" href="__CDN__/static/css/animate.css-v=1.0.0.b4e9e3b.css" tppabs="https://j20aa.com/css/animate.css?v=1.0.0.b4e9e3b">
+		<link rel="stylesheet" href="__CDN__/static/css/main.css-r=2.css-v=1.0.0.a930055.css" tppabs="https://j20aa.com/css/main.css-r=2.css?v=1.0.0.a930055">
+	</head>
+	<body>
+		
+		<div class="block headNav">
+			<div class="mainDiv pdiv">
+				<div class="logo">
+				<img src="__CDN__/static/image/logo.png"  alt="" >
+				</div>
+				<ul class="mainUl nav">
+					<li><a lang="Remittance" href="https://t.me/saner22" target="_blank">联系</a></li>
+					<!--<li><a lang="Rules" data-href="#rule">中奖规则</a></li>-->
+					<!--<li><a lang="Process" data-href="#circuit">参与流程</a></li>-->
+					<!--<li><a lang="Platform_advantage" data-href="#why">平台优势</a></li>-->
+					<!--<li><a lang="Exchange" data-href="#exchange">币种兑换</a></li>-->
+					<!--<li><a lang="Language" data-href="language">切换语言</a></li>-->
+					
+					<!--<li><a lang="FAQ" data-href="#faq">常见问题</a></li>-->
+					<!--<li><a lang="Related_APP" data-href="soft">相关软件</a></li>-->
+					<!--<li style="" class="loginLi"><a lang="Sign_In" data-href="userCenter" href="login.html">账户登录</a></li>-->
+					<!--<li style="display:none" class="pUser userLi">-->
+					<!--	<a lang="User_Center" data-href="userCenter">用户中心</a>-->
+					<!--	<div class="pHoverUser">-->
+					<!--		<div class="header">-->
+					<!--			<img src="__CDN__/static/image/logo.png" alt="">-->
+					<!--			<div>-->
+					<!--				<p class="userName">test001</p>-->
+					<!--				<p><span lang="Platform_balance">平台余额</span> <span lang="Excluding_user_wallet_balance">不代表钱包余额</span></p>-->
+					<!--			</div>-->
+					<!--		</div>-->
+					<!--		<div class="money">-->
+					<!--			<p class="flex-r-b-c"><span><span>TRX <em lang="Platform_balance">平台余额</em></span></span><span class="bindData" data-balance="trx">1</span></p>-->
+					<!--			<p class="flex-r-b-c"><span>USDT <em lang="Platform_balance">平台余额</em></span><span class="bindData" data-balance="usdt">1</span></p>-->
+					<!--		</div>-->
+					<!--		<ul class="router">-->
+					<!--			<li><a href="agencyCenter.html" lang="Agency_Center">代理中心</a></li>-->
+					<!--			<li><a href="wallet.html" lang="Balance_withdrawal">余额提现</a></li>-->
+					<!--			<li><a href="orderList.html" lang="Order_record">订单记录</a></li>-->
+					<!--			<li><a href="cashList.html" lang="Withdrawals_record">提现记录</a></li>-->
+					<!--			<li><a href="messageList.html" lang="Message_Center">消息中心</a></li>-->
+								
+					<!--			<li><a href="javascript:void(0);" class="signOut" lang="Sign_Out">退出登录</a></li>-->
+					<!--		</ul>-->
+					<!--	</div>-->
+					<!--</li>-->
+				</ul>
+			</div>
+			<div class="mainDiv mdiv">
+				<div class="logo">
+					<img alt="" lang="LogoImgUrl" src="__CDN__/static/image/logo.png">
+				</div>
+				<!--<ul class="nav nav1">-->
+				<!--	<li class="exchange"><a lang="Related_APP" data-href="soft">相关软件</a></li>-->
+				<!--	<li class="language"><a lang="Language" data-href="language">切换语言</a></li>-->
+					
+				<!--	<li class="loginLi user" style=""><a lang="Sign_In" data-href="userCenter">账户登录</a></li>-->
+				<!--	<li class="userLi user" style="display:none"><a lang="User_Center" data-href="userCenter">用户中心</a></li>-->
+				<!--</ul>-->
+				<!--<ul class="nav nav2">-->
+				<!--	<li><a lang="Remittance" data-href="#first">转账地址</a></li>-->
+				<!--	<li><a lang="Rules" data-href="#rule">中奖规则</a></li>-->
+				<!--	<li><a lang="Process" data-href="#circuit">参与流程</a></li>-->
+					
+				<!--	<li><a lang="Exchange" data-href="#exchange">币种兑换</a></li>-->
+				<!--	<li><a lang="FAQ" data-href="#faq">常见问题</a></li>-->
+				<!--</ul>-->
+			</div>
+		</div>
+
+		
+		<a id="first"></a>
+		<div class="block firstDiv">
+			<div class="mainDiv">
+				<div data-wow-delay="0.5s" class="coins wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;"></div>
+				<h3 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><span class="siteClass" lang="siteName">银河区块链</span> <span lang="Platform_for_lottery_in_currency_type">数字货币抽奖平台</span> </h3>
+				<div class="slogan">
+					<span data-wow-delay="0.5s" class="wow bounceIn" lang="Fair" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">公平</span>
+<p data-wow-delay="0.5s" class="wow bounceIn" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;"><em lang="Odds">赔率</em>1.98&nbsp;&nbsp;<em lang="Highest_return_rate_in_the_industry">行业最高</em></p>
+					<span data-wow-delay="0.5s" class="wow bounceIn" lang="Clear_and_open" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">公开</span>
+<p data-wow-delay="0.5s" class="wow bounceIn" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;"><em lang="Hash_result">哈希结果</em> &nbsp;&nbsp;<em lang="Live_and_open_for_checking">实时可查</em></p>
+					<span data-wow-delay="0.5s" class="wow fadeInUp" lang="Safe" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">安全</span>
+<p data-wow-delay="0.5s" class="wow fadeInUp" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><em lang="Amount_for_winning">中奖奖金</em> &nbsp;&nbsp;<em lang="Amount_of_winning_will_be_transferred_to_your_account_automatically">自动秒赔</em></p>
+				</div>
+				<div data-wow-delay="0.8s" class="qr wow bounceIn" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceIn;">
+					<div class="collectionUrl" id="collectionUrl1" style="margin-top:-35px"><canvas width="100" height="100"></canvas></div>
+				</div>
+				<div data-wow-delay="1s" class="comHash hashChoice firstChice wow fadeInRight" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
+				    <div data-index="0" data-type="2" class="selectBtn active" id="sadgame" onclick="select_address('sadgame')" >单双</div>
+				    <div data-index="1" data-type="1" class="selectBtn " id="sizegame" onclick="select_address('sizegame')">大小</div>
+				    <div data-index="2" data-type="3" class="selectBtn" id="doubletailgame" onclick="select_address('doubletailgame')">双尾</div>
+				    <div data-index="3" data-type="4" class="selectBtn" id="pc10game" onclick="select_address('pc10game')">牛牛</div></div>
+				<div data-wow-delay="1s" class="hashInfo wow fadeInRight" style="visibility: visible; animation-delay: 1s; animation-name: fadeInRight;">
+					<div class="text">
+						<h4 lang="Need_to_use_decentralized_wallet_for_remittance">必须使用【去中心化钱包】转账</h4>
+						<div></div>
+						<span id="hashAddress" class="collectionAddress" onclick='copy("#exchangeHashAddress","#exchangeCopyBut")'>{$config['sadgame']}</span>
+					</div>
+					<!--<div class="copyBut" id="firstCopyBut" onclick="copyaddress()" lang="Copy_with_one_click">一键复制</div>-->
+				</div>
+			</div>
+		</div>
+
+
+		
+		<a id="rule"></a>
+		<div class="block ruleDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown mdiv animated" src="__CDN__/static/image/ruleTitle.png" alt="" lang="ruleTitleImgUrl" style="visibility: visible; animation-name: fadeInDown;">
+				<div class="limitBlock wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+					<div class="icon"></div>
+					<h3 lang="Restricted_amount_of_money">金额限制</h3>
+					<ul>
+						<li lang="Rules_Amount_of_TRX">TRX参与数量只支持10-100000数字币。</li>
+						<li lang="Rules_Amount_of_USDT">USDT参与数量只支持10-10000数字币。</li>
+						<li lang="Rules_When_under_the_minimum_amount">低于最低金额时，不可参与抽奖且参与金额不进行退回。</li>
+						<li lang="Rules_When_higher_than_maximum_amount">高于最高金额时，不可参与抽奖且扣除双倍手续费后退还剩余金额。</li>
+						<li lang="Rules_When_in_lottery">仅支持整数币参与抽奖，小数部分将自动忽略。</li>
+					</ul>
+				</div>
+				<div class="side wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+					
+					<img class="ruleTitle pdiv" src="__CDN__/static/image/ruleTitle.png" alt="" lang="ruleTitleImgUrl">
+					<div class="ruleBlock">
+						<div class="icon"></div>
+						<h3 lang="Rules_for_winning_jackpot">中奖规则</h3>
+						<ul style="display: none;" id="sizegamerule" data-type="1">
+							<li lang="Considered_as_small_bet_if_the_units">转账金额的个位数为0～4，代表下注小，区块哈希值(Block hash)后三位中最右侧的数字（只看数字，不看字母）也为0～4；或转账金额的个位数为5～9，代表下注大，区块哈希值(Block hash)后三位中最右侧的数字（只看数字，不看字母）也为5～9时，则成功中奖。（注：hash值后三位全为字母时，不中奖）</li>
+							<li lang="5_seconds_after_winning">中奖后系统5秒内自动返还转账金额1.98倍的同类数字币。(由于区块链技术为了保证资金安全，每笔交易都需记录，防篡改，且全球使用数字币人口庞大，故5秒转账后可能会出现些许延迟到账情况，敬请耐心等待)</li>
+						</ul>
+						<ul style="" data-type="2" id="sadgamerule" >
+							<li lang="when_the_unitsdigit_and_the_last_digit">转账金额的个位数和区块哈希值(Block hash)后三位中最右侧的数字（只看数字，不看字母）同为单数或同为双数时，则成功中奖。（注：hash值后三位全为字母时，不中奖）</li>
+							<li lang="5_seconds_after_winning">中奖后系统5秒内自动返还转账金额1.98倍的同类数字币。(由于区块链技术为了保证资金安全，每笔交易都需记录，防篡改，且全球使用数字币人口庞大，故5秒转账后可能会出现些许延迟到账情况，敬请耐心等待)</li>
+						</ul>
+						<ul style="display: none;" data-type="3" id="doubletailgamerule">
+							<li lang="Jackpot_if_the_last_number_and_letter">转账后区块哈希值(Block hash)最后的两位为“数字+字母”或“字母+数字”组合时，则成功中奖。</li>
+							<li lang="10_seconds_after_winning">中奖后系统10秒内自动返还转账金额1.98倍的同类数字币。(由于区块链技术为了保证资金安全，每笔交易都需记录，防篡改，且全球使用数字币人口庞大，故10秒转账后可能会出现些许延迟到账情况，敬请耐心等待)</li>
+						</ul>
+						<ul style="display: none;" data-type="4" id="pc10gamerule">
+							<li lang="Based_on_the_units_digit">采用【区块哈希值】后五位。平台点数：后五位中的前3位之和；玩家点数：后五位中的后3位之和；字母=10点</li>
+							<li lang="Small_or_double_odds_are">根据牛几的几倍倍数结算（牛一*1倍….牛牛*10倍）</li>
+							<li lang="Large_or_singular_odds_are">转账金额=投注金额*10倍    如投注100需转账1000</li>
+							<li lang="Combination_of_all_odds_are">赔率：本金+投注额*牛几倍数*0.95</li>
+							<li lang="Champion_odds_are">特殊规则
+1、牛一~牛二 玩家与平台同点 平台胜；2、牛三~牛牛 玩家与平台同点，按各自结果中的最数字依次比较，字母=10；3、牛三~牛牛 玩家与平台同点，各自结果中数字同点，和局，原额退还给玩家。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="block caseDiv">
+			<div class="mainDiv">
+				<h3 class="wow fadeInDown" lang="Examples_of_winning" style="visibility: visible; animation-name: fadeInDown;">中奖实例</h3>
+				
+				<div class="caseList">
+					
+					<ul style="display:none" data-type="1" id="sizegameruleex" >
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Big_or_small_Examples.Examples_one" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;"><p>您的转账金额为：<strong>10<span>1</span></strong></p><p>该笔转账的区块哈希为：<strong>111*****8D<span>4</span>f</strong></p><p>转账金额个位数为<span>1</span>，下注<span>小</span>，区块哈希值后三位中最右侧的数字为<span>4</span>。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>101*1.98=199.98</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Big_or_small_Examples.Examples_two" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;"><p>您的转账金额为：<strong>2<span>7</span>.03</strong></p><p>该笔转账的区块哈希为：<strong>000*****8Df<span>6</span></strong></p><p>转账金额个位数为<span>7</span>，下注<span>大</span>（小数部分会自动忽略），区块哈希值后三位中最右侧的数字为<span>6</span>。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>27*1.98=53.46</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Big_or_small_Examples.Examples_three" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;"><p>您的转账金额为：<strong>10<span>5</span></strong></p><p>该笔转账的区块哈希为：<strong>000*****8D<span>4</span>a</strong></p><p>转账金额个位数为<span>5</span>，下注<span>大</span>，区块哈希值后三位中最右侧的数字为<span>4</span></p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Big_or_small_Examples.Examples_four" style="visibility: hidden; animation-delay: 1.2s; animation-name: none;"><p>您的转账金额为：<strong>2<span>2</span>.03</strong></p><p>该笔转账的区块哈希为:<strong>000*****8D5<span>5</span></strong></p><p>转账金额个位数为<span>2</span>，下注<span>小</span>（小数部分会自动忽略），区块哈希值后三位中最右侧的数字为<span>5</span>。</p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+					</ul>
+					
+					<ul style="" data-type="2" id="sadgameruleex">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Single_or_double_Examples.Examples_one" style="visibility: visible; animation-delay: 0.3s; animation-name: flipInX;"><p>您的转账金额为：<strong>10<span>1</span></strong></p><p>该笔转账的区块哈希为：<strong>000*****9e<span>3</span>a</strong></p><p>转账金额个位数为单数，区块哈希值后三位中最右侧的数字也为单数。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>101*1.98=199.98</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Single_or_double_Examples.Examples_two" style="visibility: visible; animation-delay: 0.6s; animation-name: flipInX;"><p>您的转账金额为：<strong>2<span>8</span>.03</strong></p><p>该笔转账的区块哈希为：<strong>000*****9ec<span>4</span></strong></p><p>转账金额个位数为双数（小数部分会自动忽略），区块哈希值后三位中最右侧的数字也为双数。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>28*1.98=55.44</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Single_or_double_Examples.Examples_three" style="visibility: visible; animation-delay: 0.9s; animation-name: flipInX;"><p>您的转账金额为：<strong>10<span>5</span></strong></p><p>该笔转账的区块哈希为：<strong>000*****9e<span>6</span>a</strong></p><p>转账金额个位数为单数，区块哈希值后三位中最右侧的数字为双数。</p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Single_or_double_Examples.Examples_four" style="visibility: visible; animation-delay: 1.2s; animation-name: flipInX;"><p>您的转账金额为：<strong>2<span>2</span>.03</strong></p><p>该笔转账的区块哈希为:<strong>000*****9ec<span>7</span></strong></p><p>转账金额个位数为双数，（看个位数，小数会自动忽略）区块哈希值后三位中最右侧的数字为单数。</p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+					</ul>
+					
+					<ul style="display:none" data-type="3" id="doubletailgameruleex">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Two_mantissas_Examples.Examples_one" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;"><p>您的转账金额为：<strong>101</strong></p><p>该笔转账的区块哈希为：<strong>111*****8D<span>5f</span></strong></p><p>区块哈希值最后两位5f为“<span>数字+字母</span>”组合。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>101*1.98=199.98</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Two_mantissas_Examples.Examples_two" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;"><p>您的转账金额为：<strong>200</strong></p><p>该笔转账的区块哈希为：<strong>222*****8D<span>E9</span></strong></p><p>块哈希值最后两位E9为“<span>字母+数字</span>”组合。</p><p>结果<i>中奖</i>系统回款金额为：</p><p>200*1.98=396</p></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Two_mantissas_Examples.Examples_three" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;"><p>您的转账金额为：<strong>105</strong></p><p>该笔转账的区块哈希为：<strong>333*****9e<span>66</span></strong></p><p>区块哈希值最后两位66为“<span>数字+数字</span>”组合。</p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Two_mantissas_Examples.Examples_four" style="visibility: hidden; animation-delay: 1.2s; animation-name: none;"><p>您的转账金额为：<strong>22.03</strong></p><p>该笔转账的区块哈希为:<strong>444*****9e<span>EW</span></strong></p><p>区块哈希值最后两位EW为“<span>字母+字母</span>”组合。</p><p>结果<em>未中奖</em>系统不返还数字币。</p></li>
+					</ul>
+					
+					<ul style="display:none" data-type="4" id="pc10gameruleex">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="PC10_Examples.Examples_one" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+						    <p><strong> 您的转账金额为:<span>1000</span></strong></p>
+						    <p><strong> 您的投注金额为:<span>100</span></strong></p>
+						    <p><strong><span style="color:#FF4500" >000*****34a80</span></strong></p>
+						    <p><strong> 游戏结果:</strong></p>
+						    <p><strong> 庄家：<span style="color:#FF8C00" >3+4+a=牛七</span> </strong></p>
+						    <p><strong> 玩家：<span style="color:#FF8C00">a+8+0=牛八</span></strong></p>
+						    <p><strong> 结果玩家赢系统回款为:</span></strong></p>
+						    <p><strong> <span>1000(本金)+100*8*0.95(盈利)=1760</span></strong></p>
+						    </li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="PC10_Examples.Examples_two" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+						   <p><strong> 您的转账金额为:<span>1000</span></strong></p>
+						    <p><strong> 您的投注金额为:<span>100</span></strong></p>
+						    <p><strong><span style="color:#FF4500" >000*****7b042</span></strong></p>
+						    <p><strong> 游戏结果:</strong></p>
+						    <p><strong> 庄家：<span style="color:#FF8C00" >7+b+0=牛七</span> </strong></p>
+						    <p><strong> 玩家：<span style="color:#FF8C00">0+4+2=牛六</span></strong></p>
+						    <p><strong> 结果玩家输系统回款为:</span></strong></p>
+						    <p><strong> <span>1000(本金)-100*7(亏损)=300</span></strong></p>
+						    
+						    </li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="PC10_Examples.Examples_three" style="visibility: hidden; animation-delay: 0.9s; animation-name: none;">
+						    <p><strong> 您的转账金额为:<span>1000</span></strong></p>
+						    <p><strong> 您的投注金额为:<span>100</span></strong></p>
+						    <p><strong><span style="color:#FF4500" >000*****52f61</span></strong></p>
+						    <p><strong> 游戏结果:</strong></p>
+						    <p><strong> 庄家：<span style="color:#FF8C00" >5+2+f=牛七</span> </strong></p>
+						    <p><strong> 玩家：<span style="color:#FF8C00"> f+6+1=牛七</span></strong></p>
+						    <p><strong> 开奖结果同点再比数字玩家6>庄家5结果玩家赢系统回款为:</span></strong></p>
+						    <p><strong> <span>1000(本金)+100*7*0.95(盈利)=1665</span></strong></p>
+						    </li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="PC10_Examples.Examples_four" style="visibility: hidden; animation-delay: 1.2s; animation-name: none;">
+						    <p><strong> 您的转账金额为:<span>1000</span></strong></p>
+						    <p><strong> 您的投注金额为:<span>100</span></strong></p>
+						    <p><strong><span style="color:#FF4500" >000*****0a2bf</span></strong></p>
+						    <p><strong> 游戏结果:</strong></p>
+						    <p><strong> 庄家：<span style="color:#FF8C00" >0+2+a=牛二</span> </strong></p>
+						    <p><strong> 玩家：<span style="color:#FF8C00"> 2+b+f=牛二</span></strong></p>
+						    <p><strong> 牛一、牛二同点不比 玩家输结果玩家输系统回款为:</span></strong></p>
+						    <p><strong> <span>1000(本金)-100*2*(亏损)=800</span></strong></p>
+						    
+						    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<a id="circuit"></a>
+		<div class="block circuitDiv" style="display:none" >
+			<div class="block circuitDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="__CDN__/static/image/circuitTitle.png" alt="" lang="circuitTitleImgUrl" style="visibility: visible; animation-name: fadeInDown;">
+				<div class="show">
+					<div class="side">
+						<ul>
+							<li data-num="1" class="wow fadeInUp cur" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+								<i>1</i>
+								<span class="pdiv" lang="Crypto_currency_decentralized_wallet">注册数字币【去中心化】钱包</span>
+								<span class="mdiv" lang="Registered_wallet">注册钱包</span>
+							</li>
+							<li data-num="2" class="wow fadeInUp " data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+								<i>2</i>
+								<span class="pdiv" lang="Buying_USDT_and_TRX_at_Exchange">去交易所中购买USDT和TRX</span>
+								<span class="mdiv" lang="Buying_crypto">购买虚拟币</span>
+							</li>
+							<li data-num="3" class="wow fadeInUp" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+								<i>3</i>
+								<span class="pdiv" lang="Transfer_money_to_this_platform">向本平台转账参与抽奖</span>
+								<span class="mdiv" lang="Lottery_for_remittance">转账抽奖</span>
+							</li>
+							<li data-num="4" class="wow fadeInUp" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+								<i>4</i>
+								<span class="pdiv" lang="Automatic_payment_for_winning">中奖自动回款</span>
+								<span class="mdiv" lang="Winning_money_back">中奖回款</span>
+							</li>
+						</ul>
+					</div>
+					<div class="blocks wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+						<div data-num="1" class="item b1" style="display: block;">
+							<h4 lang="Downloading_address">数字币【去中心化】钱包下载地址</h4>
+							<div class="body">
+								<table>
+									<tbody><tr>
+										<th style="width:30%" lang="Platform">平台</th>
+										<th style="width:30%" lang="Address">地址</th>
+										<th style="width:40%" lang="Tutorial">教程</th>
+									</tr>
+									<tr>
+										<td><img src="__CDN__/static/image/imtoken.png"></td>
+										<td><a href="https://token.im/download" target="_blank">token.im</a></td>
+										<td><a href="./0028.html" target="_blank" lang="Please_refer_to_tutorial">查看教程</a></td>
+									</tr>
+									<tr>
+										<td><img src="__CDN__/static/image/ownbit.png"></td>
+										<td><a href="https://ownbit.io/en/download/" target="_blank">ownbit.io</a></td>
+										<td><a href="./0017.html" target="_blank" lang="Please_refer_to_tutorial">查看教程</a></td>
+									</tr>
+									<tr>
+										<td><img src="__CDN__/static/image/atoken.png"></td>
+										<td><a href="https://trustwallet.com/zh_CN/" target="_blank">trustwallet.com</a></td>
+										<td><a href="./0015.html" target="_blank" lang="Please_refer_to_tutorial">查看教程</a></td>
+									</tr>
+									<tr>
+										<td><img src="__CDN__/static/image/tronlink.png"></td>
+										<td><a href="https://www.tronlink.org/cn/" target="_blank">tronlink.org</a></td>
+										<td><a href="https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-" target="_blank" lang="Please_refer_to_tutorial">查看教程</a></td>
+									</tr>
+									<tr>
+										<td><img src="__CDN__/static/image/bitpie.png"></td>
+										<td><a href="https://bitpie.com/" target="_blank">bitpie.com</a></td>
+										<td><a href="./0019.html" target="_blank" lang="Please_refer_to_tutorial">查看教程</a></td>
+									</tr>
+								</tbody></table>
+							</div>
+						</div>
+						<div data-num="2" class="item b2" style="display: none;">
+							<h4 lang="Buying_USDT_and_TRX_at_Exchange">去交易所中购买USDT和TRX</h4>
+							<div class="body">
+								<table>
+									<tbody><tr>
+										<th style="width:30%" lang="Platform">平台</th>
+										<th style="width:30%" lang="Address">地址</th>
+										<th style="width:40%" lang="Tutorial">教程</th>
+									</tr>
+									<tr>
+										<td><img src="./image/gate.png?v=2.0.0.a6a560f"></td>
+										<td><a href="https://www.gate.io/cn" target="_blank">gate.io</a></td>
+										<td><a href="https://www.gate.io/cn/help/guide" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial">查看教程</label><label class="mdiv" lang="Tutorial">教程</label></a></td>
+									</tr>
+									<tr>
+										<td><img src="./image/huobi.png?v=2.0.0.d2f4472"></td>
+										<td><a href="https://www.huobi.com/zh-cn/" target="_blank">huobi.com</a></td>
+										<td><a href="https://www.huobi.com/support/zh-cn/list/360000010372" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial">查看教程</label><label class="mdiv" lang="Tutorial">教程</label></a></td>
+									</tr>
+									<tr>
+										<td><img src="./image/binance.png?v=2.0.0.8d1fde5"></td>
+										<td><a href="https://www.binance.com/zh-CN" target="_blank">binance.com</a></td>
+										<td><a href="https://academy.binance.com/zh/articles/binance-beginner-s-guide" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial">查看教程</label><label class="mdiv" lang="Tutorial">教程</label></a></td>
+									</tr>
+									<tr>
+										<td><img src="./image/okex.png?v=2.0.0.3f2e0d2"></td>
+										<td><a href="https://www.okex.com/cn" target="_blank">okex.com</a></td>
+										<td><a href="https://www.okex.com/support/hc/zh-cn/sections/360000033031-%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial">查看教程</label><label class="mdiv" lang="Tutorial">教程</label></a></td>
+									</tr>
+									<tr>
+										<td><img src="./image/zb.png?v=2.0.0.ac38243"></td>
+										<td><a href="https://www.zb.com/cn/" target="_blank">zb.com</a></td>
+										<td><a href="https://www.zb.com/help/guides/1" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial">查看教程</label><label class="mdiv" lang="Please_refer_to_tutorial">查看教程</label></a></td>
+									</tr>
+								
+								</tbody></table>
+							</div>
+						</div>
+						<div data-num="3" class="item b3" style="display: none;">
+							<h4 lang="Transfer_money_to_this_platform">向本平台转账参与抽奖</h4>
+							<div class="body">
+								<h5 class="pdiv" lang="Please_transfer_money_to_the_below">向下方地址按规定金额转账即可成功参与抽奖</h5>
+								<h5 class="mdiv" lang="Please_transfer_money_to_the_below">向下方地址按规定金额转账即可成功参与抽奖</h5>
+								<div class="comHash only hashChoice"><div data-index="0" data-type="2" class="selectBtn active" style="">单双</div><div data-index="1" data-type="1" class="selectBtn" style="display: none;">大小</div><div data-index="2" data-type="3" class="selectBtn" style="display: none;">双尾</div><div data-index="3" data-type="4" class="selectBtn" style="display: none;">PC10</div></div>
+								<div class="text">
+									<p lang="The_official_collecting_address">平台官方收款地址</p>
+									<span class="collectionAddress">TWSxLAeDVarG5bizMnAgB4CKzrrEtSP888</span>
+								</div>
+								<div class="copyBut" id="firstCopyBut" onclick="copy(&quot;#hashAddress&quot;,&quot;#firstCopyBut&quot;)" lang="Copy_with_one_click">一键复制</div>
+								<div class="qr">
+									<div class="collectionUrl" id="collectionUrl2"><canvas width="110" height="110"></canvas></div>
+									<i></i>
+								</div>
+							</div>
+						</div>
+						<div data-num="4" class="item b4" style="display: none;">
+							<h4 lang="Automatic_payment_for_winning">中奖自动回款</h4>
+							<div class="body">
+								<p lang="Your_money_will_return_to_your_account">中奖后将自动回款至您的账户中</p>
+								<div class="icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<a id="why"></a>
+		<div class="block whyDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="__CDN__/static/image/whyTitle.png" alt="" lang="whyTitleImgUrl" style="visibility: visible; animation-name: fadeInDown;width:80%">
+				<div class="show">
+					<div class="buts">
+						<ul>
+							<li data-num="1" class="b1 wow bounceIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;"><em><i></i></em><span lang="fair_and_open">公平透明</span></li>
+							<li data-num="2" class="b2 wow bounceIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceIn;"><em><i></i></em><span lang="Safe_and_reliable">安全可靠</span></li>
+							<li data-num="3" class="b3 wow bounceIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: bounceIn;"><em><i></i></em><span class="pdiv" lang="Minimalist_and_fast">极简快速</span><span class="mdiv" lang="easy_to_win">易中奖</span></li>
+							<li data-num="4" class="b4 wow bounceIn cur" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: bounceIn;"><em><i></i></em><span lang="One_to_one_service">专属客服</span></li>
+						</ul>
+					</div>
+					<div class="blocks wow fadeInUp" data-wow-delay="0.6s" style="margin-left: -1251px; visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+						<div data-num="4" data-wow-delay="0.3s" class="item b4 wow fadeIn pdiv cur" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+							<h4 lang="One_to_one_service">专属客服</h4>
+							<div class="body">
+								<ul>
+									<li lang="One_on_one_explanation">一对一讲解，高效回复。</li>
+									<li lang="Multiple_methods_of_contacts">多种联系方式，供您自由选择</li>
+								</ul>
+								<div class="connect">
+									<div class="email">
+										
+									</div>
+									<ul class="customerServiceList"><a class="tg" href="https://t.me/nimo777" target="_blank"><div class="tg"><img src="https://fnfile1002.mashuil.xyz/upload/images/202204/0e6cd6c0-72ad-438a-b41d-545fde1b8e93.png"><span>代理招商</span></div></a><a class="tg" href="https://client.wyx88.cn/?a=11lrfw&amp;u=游客f4926ea913334123ac0f0081a138590f&amp;vl=1&amp;t=0&amp;st=2&amp;ref=1002" target="_blank"><div class="tg"><img src="https://fnfile1002.mashuil.xyz/upload/images/202204/14d3ad03-a8b5-4555-9e48-66493862f350.png"><span>客服</span></div></a></ul>
+									
+								</div>	
+							</div>
+						</div>
+						<div data-num="1" data-wow-delay="0.6s" class="item b1 wow fadeIn" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
+							<h4 lang="All_gaming_process_is_fair_and_open">公平透明</h4>
+							<div class="body">
+								<ul>
+									<li lang="We_protect_everybody_right">我们捍卫每个人享有公平的权力</li>
+									<li lang="Block_hash_is_being_formed">区块哈希值依托于去中心化的区块链网络随机生成，任何人随时随地都可以在区块链上查询</li>
+									<li lang="All_records_are_open">真正做到平台不可操控数据，所有记录透明有迹可查</li>
+								</ul>
+							</div>
+						</div>
+						<div data-num="2" data-wow-delay="0.9s" class="item b2 wow fadeIn" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
+							<h4 lang="Safe_and_reliable">安全可靠</h4>
+							<div class="body">
+								<ul>
+									<li lang="We_guarantee_our_customers">我们致力保障客户信息财产安全</li>
+									<li lang="No_need_for_realName_registration">无需实名注册，无需绑定任何个人信息</li>
+									<li lang="No_freezing_credit_card">无冻卡风险，无需充值存款</li>
+									<li lang="No_need_for_withdrawal_authentication">无需提款申请审核</li>
+									<li lang="No_limit_for_payment">无打款流水限制</li>
+									<li lang="No_need_to_worry_about_funds">平台资金池随时可查，无需担心平台资金断裂</li>
+								</ul>
+							</div>
+						</div>
+						<div data-num="3" data-wow-delay="1.2s" class="item b3 wow fadeIn" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;">
+							<h4 lang="Minimalist_and_fast">极简快速</h4>
+							<div class="body">
+								<ul>
+									<li lang="We_seek_simplified_process">我们追求极简流程/快速派彩</li>
+									<li lang="Only_need_one_decentralized">只需一个【去中心化】数字钱包，即刻参与抽奖</li>
+									<li lang="No_limits_of_any_gaming">无任何玩法、策略、设备限制，随时随地随心所欲</li>
+									<li lang="Automatically_returns">中奖后10秒内自动到账，游戏不间断，体验酣畅淋漓</li>
+								</ul>
+
+							</div>
+						</div>
+						<div data-num="4" data-wow-delay="1.5s" class="item b4 wow fadeIn cur" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeIn;">
+							<h4 lang="One_to_one_service">专属客服</h4>
+							<div class="body">
+								<ul>
+									<li lang="One_on_one_explanation">一对一讲解，高效回复。</li>
+									<li lang="Multiple_methods_of_contacts">多种联系方式，供您自由选择</li>
+								</ul>
+								<div class="connect">
+									<div class="email">
+										
+									</div>
+									<ul class="customerServiceList"><a class="tg" href="https://t.me/nimo777" target="_blank"><div class="tg"><img src="https://fnfile1002.mashuil.xyz/upload/images/202204/0e6cd6c0-72ad-438a-b41d-545fde1b8e93.png"><span>代理招商</span></div></a><a class="tg" href="https://client.wyx88.cn/?a=11lrfw&amp;u=游客f4926ea913334123ac0f0081a138590f&amp;vl=1&amp;t=0&amp;st=2&amp;ref=1002" target="_blank"><div class="tg"><img src="https://fnfile1002.mashuil.xyz/upload/images/202204/14d3ad03-a8b5-4555-9e48-66493862f350.png"><span>客服</span></div></a></ul>
+								</div>	
+							</div>
+						</div>
+						<div data-num="1" data-wow-delay="1.8s" class="item b1 wow fadeIn pdiv" style="visibility: visible; animation-delay: 1.8s; animation-name: fadeIn;">
+							<h4 lang="All_gaming_process_is_fair_and_open">公平透明</h4>
+							<div class="body">
+								<ul>
+									<li lang="We_protect_everybody_right">我们捍卫每个人享有公平的权力</li>
+									<li lang="Block_hash_is_being_formed">区块哈希值依托于去中心化的区块链网络随机生成，任何人随时随地都可以在区块链上查询</li>
+									<li lang="All_records_are_open">真正做到平台不可操控数据，所有记录透明有迹可查</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!--<a id="exchange"></a>-->
+		<!--<div class="block exchangeDiv">-->
+		<!--	<div class="mainDiv">-->
+				
+		<!--		<img class="title wow fadeInDown" src="" alt="" lang="exchangeTitleImgUrl">-->
+		<!--		<div class="rate wow fadeInUp" data-wow-delay="0.2s"><span lang="Current_exchange_rate"></span>：<i>loading...</i></div>-->
+		<!--		<div class="form wow fadeInLeft" data-wow-delay="0.5s">-->
+		<!--			<div class="type">-->
+		<!--				<ul>-->
+		<!--					<li data-type="usdt_to_trx" class="cur" lang="USDT_to_TRX"></li>-->
+		<!--					<li data-type="trx_to_usdt" lang="TRX_to_USDT"></li>							-->
+		<!--				</ul>-->
+		<!--			</div>-->
+		<!--			<div class="input b1"><input type="number"><span>USDT</span></div>-->
+		<!--			<div class="text" lang="Exchangeable"></div>-->
+		<!--			<div class="input b2"><input type="number"><span>TRX</span></div>-->
+		<!--			<button lang="Calculation"></button>-->
+		<!--		</div>-->
+		<!--		<div class="note wow fadeInRight" data-wow-delay="0.5s">-->
+		<!--			<div class="qrInfo">-->
+		<!--				<div class="text" lang="If_you_need_to_exchange_USDT"></div>						-->
+		<!--				<div class="qr pdiv">-->
+		<!--					<div class="exchangeUrl" id="exchangeUrl1"></div>-->
+							
+		<!--					<span lang="Scan_and_exchange"></span>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--			<div class="hashInfo">-->
+		<!--				<button id="exchangeCopyBut" onclick='copy("#exchangeHashAddress","#exchangeCopyBut")' lang="Copy"></button>-->
+		<!--				<h4 lang="Official_exchange_link"></h4>-->
+		<!--				<span id="exchangeHashAddress"></span>-->
+		<!--			</div>-->
+		<!--			<div class="qr mdiv">-->
+						
+		<!--				<div class="exchangeUrl" id="exchangeUrl2"></div>-->
+		<!--				<span lang="Scan_and_exchange"></span>-->
+		<!--			</div>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--</div>-->
+
+		
+		
+
+		
+		<a id="faq"></a>
+		<div class="block faqDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="__CDN__/static/image/faqTitle.png" alt="" lang="faqTitleImgUrl" style="visibility: visible; animation-name: fadeInDown;">
+				<div class="list">
+					<ul>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="What_is_Block_hash">Q1：什么是区块哈希值(Block hash)？</p>
+							<div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+								<span lang="Block_hash_is_the_DNA">区块哈希值是一段数据的DNA，每个区块哈希值都是唯一的、随机的且不可破解的。</span>
+								<a href="https://baike.baidu.com/item/Hash/390310" target="_blank" lang="Click_to_see_more">点击查看更多介绍</a>
+							</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="What_is_block_chain">Q2：什么是区块链？</p>
+							<div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+								<span lang="Block_chain_is_a_shared_data_base">区块链从本质上讲，它是一个共享数据库，存储于其中的数据或信息。具有不可伪造、全程留痕、可以追溯、公开透明、集体维护等特征。</span><br>
+								<a href="https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666" target="_blank" lang="Click_to_see_more">点击查看更多介绍</a>
+							</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="Centralized_wallet">Q3：中心化钱包？去中心化钱包？为什么中心化钱包无法查询转账？</p>
+							<div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+								<span lang="Ex_the_address_to_your_wallet">举一个例子：您自己的钱包地址是A，您给地址E转入10个USDT，但您用交易哈希值去查询，只能查询到服务商随机某个账本地址B（或C或D等等）与E的转账。同理E也无法得知这10个USDT是否是您转出的，因为E只能看见是账本地址B给他转入10个USDT。这就是为什么中心化钱包无法在区块链上查询真实转账信息。</span><br>
+								<a href="https://zhuanlan.zhihu.com/p/98203076" target="_blank" lang="Click_to_see_more">点击查看更多介绍</a><br>
+							</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="Why_I_can_win_the_lottery">Q4：为什么我会连续中奖或不中奖？</p>
+							<div class="wow fadeInUp" lang="Not_winning_the_lottery" style="visibility: visible; animation-name: fadeInUp;">首先连续多次不中奖的是小概率事件（<a href="https://baike.baidu.com/item/%E5%B0%8F%E6%A6%82%E7%8E%87%E4%BA%8B%E4%BB%B6/7339473" target="_blank">小概率事件定义</a>），其次中奖与不中奖是随机事件，随机事件的发生的频率会趋于一个稳定值。在非迭代的情况下，事物出现的概率对每个人来讲是相等的，这个情况下，每个人都是公平的。同时随机事件会遵大数定律（在试验不变的条件下，重复试验多次，随机事件的频率近似于它的概率大数定律定义），在转账频次不断增加的情况下，中奖与不中奖的概率会趋于一个稳定值。所以请您继续转账，随着转账频次增加则中奖总概率会提升。</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="Why_there_delay">Q5：为什么会延迟到帐？</p>
+							<div class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+								<span lang="In_order_to_ensure">由于区块链技术为了保证资金的安全性，会进行多次核算，比对，确认。所以计算速度较慢，但是贵在安全。</span><br>
+								<a href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/articles/1_conception/why_blockchain_slow.html" target="_blank" lang="Click_to_see_more">点击查看更多介绍</a>
+							</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+							<p lang="Why_is_there_so_many_types">Q6：为什么转币时有那么多USDT的类型选项？我该选哪一个？</p>
+							<div class="wow fadeInUp" lang="Many_known_chain" style="visibility: visible; animation-name: fadeInUp;">全球有许多知名公链（<a href="https://www.tuoluocaijing.cn/article/detail-10030784.html" target="_blank">点击查看全球知名公链简介</a>）都支持进行USDT转账，而平台是基于波场TRC20技术。所以平台的转账地址是属于USDT-TRC20， 您应该选择USDT-TRC20；如果您选择了其他类型，平台则无法收到您的USDT，这会造成您和平台双方的损失。</div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+						<li class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+							<p lang="If_I_transfer_to_the_wrong_address">Q7：转币时转错地址或者选错币的类型，怎么办？是否还能找回？</p>
+							<div class="wow fadeInUp" lang="If_instead_of_USDT_TRC20" style="visibility: hidden; animation-name: none;">比如说您给我们转币时应该选择 USDT-TRC20 类型，但您选择了其他类型USDT-OMNI或者USDT-ERC20，那么就会出现丢币的情况，这种情况是无法找回的。<a href="https://www.feixiaohao.cc/news/8183926.html" target="_blank">点击查看 如果转错币怎么办？</a></div>
+							<button class="mdiv" lang="Expand">展开</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="tipDiv"></div>
+
+		
+		<div class="sideDiv pdiv">
+			<ul>
+				<li class="qr" data-type="qr"><i></i><span lang="Scan_code_transfer"></span></li>
+				<li class="account" data-type="account"><i></i><span lang="Account_transfer"></span></li>
+				<li class="service" data-type="service"><i></i><span lang="Contact"></span></li>
+			</ul>
+		</div>
+
+		
+		<div class="winMask"></div>
+		<div class="winDiv">
+			<div class="colse"></div>
+			
+			<div class="item qr">
+				<h2 lang="Scan_code_transfer"></h2>
+				<div class="body">
+					<div class="comHash only hashChoice">
+					</div>
+					<div class="qrcode">
+						<div class="modelQrcode" id="modelQrcode"></div>
+					</div>
+					
+					<span lang="Scan_code_transfer"></span>
+				</div>
+			</div>
+			
+			<div class="item account">
+				<h2 lang="Account_transfer"></h2>
+				<div class="body">
+					<div class="comHash only hashChoice">
+					</div>
+					<em class="collectionAddress"></em>
+					<button id="winCopyBut" onclick='copy("#hashAddress","#winCopyBut")' lang="Copy"></button>
+				</div>
+			</div>
+			
+			<div class="item service">
+				<h2 lang="One_to_one_service"></h2>
+				<div class="body">
+					<div class="email">
+					</div>
+					<ul class="customerServiceList">
+					</ul>
+				</div>
+			</div>
+			
+			<div class="item soft">
+				<h2 lang="Related_APP"></h2>
+				<div class="body">
+					<ul>
+						<li><strong lang="VPN_software_recommendation"></strong></li>
+						<li class="link">789VPN：<a target="_blank" href="javascript:if(confirm('http://789vpn.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://789vpn.com/'" tppabs="http://789vpn.com/" lang="Download"></a><br></li>
+						<li class="link">优途VPN：<a target="_blank" href="javascript:if(confirm('https://yuutto.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://yuutto.com/'" tppabs="https://yuutto.com/" lang="Download"></a><br></li>
+						<li><strong lang="Other_APP_downloads"></strong></li>
+						<li class="link">Telegram <span lang="Client"></span>：<a target="_blank" href="javascript:if(confirm('https://telegram.org/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://telegram.org/'" tppabs="https://telegram.org/" lang="Download"></a><br></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+       
+		
+<script>
+
+var qrcode = new QRCode(document.getElementById('collectionUrl1'),"{$config['sadgame']}");
+// 设置参数方式
+
+function    select_address(game_type){
+    //清除所有
+    document.getElementById("sizegame").setAttribute("class","selectBtn" );
+    document.getElementById("sadgame").setAttribute("class","selectBtn" );
+    document.getElementById("doubletailgame").setAttribute("class","selectBtn" );
+    document.getElementById("pc10game").setAttribute("class","selectBtn" );
+    
+    document.getElementById("sizegamerule").style.display = "none"
+    document.getElementById("sadgamerule").style.display = "none"
+    document.getElementById("doubletailgamerule").style.display = "none"
+    document.getElementById("pc10gamerule").style.display = "none"
+    
+    document.getElementById("sizegameruleex").style.display = "none"
+    document.getElementById("sadgameruleex").style.display = "none"
+    document.getElementById("doubletailgameruleex").style.display = "none"
+    document.getElementById("pc10gameruleex").style.display = "none"
+    
+    switch (game_type) {
+        case 'sizegame':
+            // code
+            document.getElementById("hashAddress").innerHTML = "{$config['sizegame']}"
+            qrcode.makeCode("{$config['sizegame']}");
+            document.getElementById("sizegamerule").style.display = "block"
+            document.getElementById("sizegameruleex").style.display = "block"
+            break;
+         case 'sadgame':
+            // code
+            document.getElementById("hashAddress").innerHTML = "{$config['sadgame']}"
+            qrcode.makeCode("{$config['sadgame']}");
+            document.getElementById("sadgamerule").style.display = "block"
+            document.getElementById("sadgameruleex").style.display = "block"
+            break;
+         case 'doubletailgame':
+            // code
+            document.getElementById("hashAddress").innerHTML = "{$config['doubletailgame']}"
+            qrcode.makeCode("{$config['doubletailgame']}");
+            document.getElementById("doubletailgamerule").style.display = "block"
+            document.getElementById("doubletailgameruleex").style.display = "block"
+            break;
+         case 'pc10game':
+            // code
+            document.getElementById("hashAddress").innerHTML = "{$config['pc10game']}"
+            qrcode.makeCode("{$config['pc10game']}");
+            document.getElementById("pc10gamerule").style.display = "block"
+            document.getElementById("pc10gameruleex").style.display = "block"
+            break;
+        
+        default:
+            // code
+            // document.getElementById("hashAddress").innerHtml = "2313"
+    }
+    document.getElementById(game_type).setAttribute("class","selectBtn active" );
+    
+}
+
+function copyaddress(){
+    //  var text = document.getElementById("hashAddress").innerHTML;
+    //  console.log(text);
+    //  window.getSelection().selectAllChildren(text);
+    //  document.execCommand("Copy");
+  
+  // 执行浏览器复制命令
+ layer.msg("复制成功");
+
+    // alert("复制成功");
+    
+}
+</script>
+
+		<script  src="https://j20aa.com/js/mergeData.js?v=1.0.0.c28b171" charset="utf-8"></script>
+		<script  src="__CDN__/static/js/main.js" charset="utf-8"></script>
+		<script  src="https://j20aa.com/js/api.js?v=1.0.0.5ebaf07" charset="utf-8"></script>
+		<script>var wow=new WOW({boxClass:"wow",animateClass:"animated",offset:30,mobile:!0});wow.init()</script>
+	</body>
+</html>

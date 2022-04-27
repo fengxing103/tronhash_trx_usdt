@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="__CDN__/assets/libs/bootstrap-table/dist/bootstrap-table.min.css">
+{if $Think.get.dialog}
+<style>
+    body {
+        padding-top: 0;
+        background: #fff;
+    }
+
+    nav.navbar-fixed-top, footer.footer {
+        display: none;
+    }
+
+    main.content {
+        padding: 0;
+    }
+
+    .fixed-table-container {
+        border: none;
+    }
+
+    .panel-heading .nav-tabs {
+        padding: 0 15px;
+    }
+
+    .panel-heading .nav-tabs li {
+        font-size: 14px;
+    }
+</style>
+{/if}
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {include file="common/sidenav" /}
+        </div>
+        <div class="col-md-9">
+            <div class="panel panel-default">
+               
+                <div class="panel-body">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="one">
+                        <div class="widget-body no-padding">
+                            <div id="toolbar" class="toolbar">
+                                <a href="javascript:;" class="btn btn-primary btn-refresh" title="刷新"><i class="fa fa-refresh"></i> </a>
+                               
+                            </div>
+                            <table id="table" class="table table-bordered table-hover" width="100%">
+                                 <tr>
+                                    <th>用户名</th>
+                                    <th>trc20地址</th>
+                                    <th>trx投资(笔数/额度)</th>
+                                    <th>usdt投资(笔数/额度)</th>
+                                    <th>总盈利(trx/usdt)</th>
+                                </tr>
+                                {volist name='list' id='vo'} 
+                                    <tr>
+                                    <td>{$vo.username}</td>
+                                    <td>{$vo.email}</td>
+                                    <td>{$vo.trx_count}/{$vo.trx_sum} trx</td>
+                                    <td>{$vo.usdt_count}/{$vo.usdt_sum} usdt</td>
+                                    <td>{$vo.trx_profit} trx / {$vo.usdt_profit} usdt</td>
+                                </tr>
+                                {/volist}
+                            </table>
+                           
+                        </div>
+                    </div>
+        
+                </div>
+         </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function reload_local(){
+        
+    }
+</script>

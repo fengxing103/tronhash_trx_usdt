@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+		<script src="../cn/jquery.js-v=1.0.0.b61aa6e" tppabs="https://j20aa.com/image/lib/jquery.js?v=1.0.0.b61aa6e" charset="utf-8"></script>
+		<script src="../cn/qrcode.js-v=1.0.0.d10c04c" tppabs="https://j20aa.com/image/lib/qrcode.js?v=1.0.0.d10c04c" charset="utf-8"></script>
+		<script src="../cn/md5.min.js-v=1.0.0.13bfbeb" tppabs="https://j20aa.com/image/lib/md5.min.js?v=1.0.0.13bfbeb" charset="utf-8"></script>
+		<script src="../cn/clipboard.js-v=1.0.0.74530d5" tppabs="https://j20aa.com/image/lib/clipboard.js?v=1.0.0.74530d5" charset="utf-8"></script>
+		<script src="../cn/wow.js-v=1.0.0.d98d85d" tppabs="https://j20aa.com/image/lib/wow.js?v=1.0.0.d98d85d" charset="utf-8"></script>
+		<script src="../hc/en-us/articles/customI18n.js-v=1.0.0.72484c1" tppabs="https://j20aa.com/image/js/customI18n.js?v=1.0.0.72484c1" charset="utf-8"></script>
+		<link rel="stylesheet" href="../cn/help/animate.css-v=1.0.0.b4e9e3b.css" tppabs="https://j20aa.com/image/css/animate.css?v=1.0.0.b4e9e3b">
+		<link rel="stylesheet" href="../cn/help/main.css-r=2.css-v=1.0.0.a930055.css" tppabs="https://j20aa.com/image/css/main.css-r=2.css?v=1.0.0.a930055">
+	</head>
+	<body>
+		
+		<div class="block headNav">
+			<div class="mainDiv pdiv">
+				<div class="logo">
+					<img src="../zh-cn/logo.png-v=1.0.0.1723de2" tppabs="https://j20aa.com/image/image/logo.png?v=1.0.0.1723de2" alt="" lang="logoImgUrl">
+				</div>
+				<ul>
+					<li><a lang="Remittance" data-href="#first"></a></li>
+					<li><a lang="Rules" data-href="#rule"></a></li>
+					<li><a lang="Process" data-href="#circuit"></a></li>
+					<li><a lang="Platform_advantage" data-href="#why"></a></li>
+					<li><a lang="Exchange" data-href="#exchange"></a></li>
+					<li><a lang="Language" data-href="javascript:if(confirm('https://j20aa.com/image/language  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/language'" tppabs="https://j20aa.com/image/language"></a></li>
+					
+					<li><a lang="FAQ" data-href="#faq"></a></li>
+					<li><a lang="Related_APP" data-href="javascript:if(confirm('https://j20aa.com/image/soft  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/soft'" tppabs="https://j20aa.com/image/soft"></a></li>
+				</ul>
+			</div>
+			<div class="mainDiv mdiv">
+				<div class="logo">
+					<img src="../zh-cn/logo.png-v=1.0.0.1723de2" tppabs="https://j20aa.com/image/image/logo.png?v=1.0.0.1723de2" alt="" lang="logoImgUrl">
+				</div>
+				<ul class="nav1">
+					<li class="exchange"><a lang="Related_APP" data-href="javascript:if(confirm('https://j20aa.com/image/soft  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/soft'" tppabs="https://j20aa.com/image/soft"></a></li>
+					<li class="language"><a lang="Language" data-href="javascript:if(confirm('https://j20aa.com/image/language  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/language'" tppabs="https://j20aa.com/image/language"></a></li>
+					<li class="service"><a lang="Contact" data-href="javascript:if(confirm('https://j20aa.com/image/service  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/service'" tppabs="https://j20aa.com/image/service"></a></li>
+				</ul>
+				<ul class="nav2">
+					<li><a lang="Remittance" data-href="#first"></a></li>
+					<li><a lang="Rules" data-href="#rule"></a></li>
+					<li><a lang="Process" data-href="#circuit"></a></li>
+					
+					<li><a lang="Exchange" data-href="#exchange"></a></li>
+					<li><a lang="FAQ" data-href="#faq"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<a id="first"></a>
+		<div class="block firstDiv">
+			<div class="mainDiv">
+				<div data-wow-delay="0.5s" class="coins wow fadeInRight"></div>
+				<h3 class="wow fadeInUp"><span class="siteClass" lang="siteName"></span> <span lang="Platform_for_lottery_in_currency_type"></span> </h3>
+				<div class="slogan">
+					<span data-wow-delay="0.5s" class="wow bounceIn" lang="Fair"></span>
+<p data-wow-delay="0.5s" class="wow bounceIn"><em lang="Odds"></em>1.98&nbsp;&nbsp;<em lang="Highest_return_rate_in_the_industry"></em></p>
+					<span data-wow-delay="0.5s" class="wow bounceIn" lang="Clear_and_open"></span>
+<p data-wow-delay="0.5s" class="wow bounceIn"><em lang="Hash_result"></em> &nbsp;&nbsp;<em lang="Live_and_open_for_checking"></em></p>
+					<span data-wow-delay="0.5s" class="wow fadeInUp" lang="Safe"></span>
+<p data-wow-delay="0.5s" class="wow fadeInUp"><em lang="Amount_for_winning"></em> &nbsp;&nbsp;<em lang="Amount_of_winning_will_be_transferred_to_your_account_automatically"></em></p>
+				</div>
+				<div data-wow-delay="0.8s" class="qr wow bounceIn">
+					<div class="collectionUrl" id="collectionUrl1"></div>
+				</div>
+				<div data-wow-delay="1s" class="comHash hashChoice wow fadeInRight">
+				</div>
+				<div data-wow-delay="1s" class="hashInfo wow fadeInRight">
+					<div class="text">
+						<h4 lang="Need_to_use_decentralized_wallet_for_remittance"></h4>
+						<div></div>
+						<span id="hashAddress" class="collectionAddress"></span>
+					</div>
+					<div class="copyBut" id="firstCopyBut" onclick='copy("#hashAddress","#firstCopyBut")' lang="Copy_with_one_click"></div>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<a id="rule"></a>
+		<div class="block ruleDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown mdiv" src="" alt="" lang="ruleTitleImgUrl">
+				<div class="limitBlock wow fadeInLeft">
+					<div class="icon"></div>
+					<h3 lang="Restricted_amount_of_money"></h3>
+					<ul>
+						<li lang="Rules_Amount_of_TRX"></li>
+						<li lang="Rules_Amount_of_USDT"></li>
+						<li lang="Rules_When_under_the_minimum_amount"></li>
+						<li lang="Rules_When_higher_than_maximum_amount"></li>
+						<li lang="Rules_When_in_lottery"></li>
+					</ul>
+				</div>
+				<div class="side wow fadeInRight">
+					
+					<img class="ruleTitle pdiv" src="" alt="" lang="ruleTitleImgUrl">
+					<div class="ruleBlock">
+						<div class="icon"></div>
+						<h3 lang="Rules_for_winning_jackpot"></h3>
+						<ul style="display:none" data-type="1">
+							<li lang="Considered_as_small_bet_if_the_units"></li>
+							<li lang="5_seconds_after_winning"></li>
+						</ul>
+						<ul style="display:none" data-type="2">
+							<li lang="when_the_unitsdigit_and_the_last_digit"></li>
+							<li lang="5_seconds_after_winning"></li>
+						</ul>
+						<ul style="display:none" data-type="3">
+							<li lang="Jackpot_if_the_last_number_and_letter"></li>
+							<li lang="10_seconds_after_winning"></li>
+						</ul>
+						<ul style="display:none" data-type="4">
+							<li lang="Based_on_the_units_digit"></li>
+							<li lang="Small_or_double_odds_are"></li>
+							<li lang="Large_or_singular_odds_are"></li>
+							<li lang="Combination_of_all_odds_are"></li>
+							<li lang="Champion_odds_are"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		
+		<div class="block caseDiv">
+			<div class="mainDiv">
+				<h3 class="wow fadeInDown" lang="Examples_of_winning"></h3>
+				
+				<div class="caseList">
+					
+					<ul style="display:none" data-type="1">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Big_or_small_Examples.Examples_one"></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Big_or_small_Examples.Examples_two"></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Big_or_small_Examples.Examples_three"></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Big_or_small_Examples.Examples_four"></li>
+					</ul>
+					
+					<ul style="display:none" data-type="2">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Single_or_double_Examples.Examples_one"></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Single_or_double_Examples.Examples_two"></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Single_or_double_Examples.Examples_three"></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Single_or_double_Examples.Examples_four"></li>
+					</ul>
+					
+					<ul style="display:none" data-type="3">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="Two_mantissas_Examples.Examples_one"></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="Two_mantissas_Examples.Examples_two"></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="Two_mantissas_Examples.Examples_three"></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="Two_mantissas_Examples.Examples_four"></li>
+					</ul>
+					
+					<ul style="display:none" data-type="4">
+						<li class="item wow flipInX" data-wow-delay="0.3s" lang="PC10_Examples.Examples_one"></li>
+						<li class="item wow flipInX" data-wow-delay="0.6s" lang="PC10_Examples.Examples_two"></li>
+						<li class="item wow flipInX" data-wow-delay="0.9s" lang="PC10_Examples.Examples_three"></li>
+						<li class="item wow flipInX" data-wow-delay="1.2s" lang="PC10_Examples.Examples_four"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<a id="circuit"></a>
+		<div class="block circuitDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="" alt="" lang="circuitTitleImgUrl">
+				<div class="show">
+					<div class="side">
+						<ul>
+							<li data-num="1" class="wow fadeInUp" data-wow-delay="0.3s">
+								<i>1</i>
+								<span class="pdiv" lang="Crypto_currency_decentralized_wallet"></span>
+								<span class="mdiv" lang="Registered_wallet"></span>
+							</li>
+							<li data-num="2" class="wow fadeInUp" data-wow-delay="0.6s">
+								<i>2</i>
+								<span class="pdiv" lang="Buying_USDT_and_TRX_at_Exchange"></span>
+								<span class="mdiv" lang="Buying_crypto"></span>
+							</li>
+							<li data-num="3" class="wow fadeInUp" data-wow-delay="0.9s">
+								<i>3</i>
+								<span class="pdiv" lang="Transfer_money_to_this_platform"></span>
+								<span class="mdiv" lang="Lottery_for_remittance"></span>
+							</li>
+							<li data-num="4" class="wow fadeInUp" data-wow-delay="1.2s">
+								<i>4</i>
+								<span class="pdiv" lang="Automatic_payment_for_winning"></span>
+								<span class="mdiv" lang="Winning_money_back"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="blocks wow fadeInRight" data-wow-delay="0.6s">
+						<div data-num="1" class="item b1">
+							<h4 lang="Downloading_address"></h4>
+							<div class="body">
+								<table>
+									<tr>
+										<th style="width:30%" lang="Platform"></th>
+										<th style="width:30%" lang="Address"></th>
+										<th style="width:40%" lang="Tutorial"></th>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/imtoken.png-v=1.0.0.d31ca99" tppabs="https://j20aa.com/image/image/imtoken.png?v=1.0.0.d31ca99"></td>
+										<td><a href="javascript:if(confirm('https://token.im/download  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://token.im/download'" tppabs="https://token.im/download" target="_blank">token.im</a></td>
+										<td><a href="javascript:if(confirm('https://j20aa.com/image/0028.html  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/0028.html'" tppabs="https://j20aa.com/image/0028.html" target="_blank" lang="Please_refer_to_tutorial"></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/ownbit.png-v=1.0.0.b84ca78" tppabs="https://j20aa.com/image/image/ownbit.png?v=1.0.0.b84ca78"></td>
+										<td><a href="javascript:if(confirm('https://ownbit.io/en/download/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://ownbit.io/en/download/'" tppabs="https://ownbit.io/en/download/" target="_blank">ownbit.io</a></td>
+										<td><a href="javascript:if(confirm('https://j20aa.com/image/0017.html  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/0017.html'" tppabs="https://j20aa.com/image/0017.html" target="_blank" lang="Please_refer_to_tutorial"></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/atoken.png-v=1.0.0.b33a4b0" tppabs="https://j20aa.com/image/image/atoken.png?v=1.0.0.b33a4b0"></td>
+										<td><a href="javascript:if(confirm('https://trustwallet.com/zh_CN/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://trustwallet.com/zh_CN/'" tppabs="https://trustwallet.com/zh_CN/" target="_blank">trustwallet.com</a></td>
+										<td><a href="javascript:if(confirm('https://j20aa.com/image/0015.html  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/0015.html'" tppabs="https://j20aa.com/image/0015.html" target="_blank" lang="Please_refer_to_tutorial"></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/tronlink.png-v=1.0.0.6ffa10e" tppabs="https://j20aa.com/image/image/tronlink.png?v=1.0.0.6ffa10e"></td>
+										<td><a href="javascript:if(confirm('https://www.tronlink.org/cn/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.tronlink.org/cn/'" tppabs="https://www.tronlink.org/cn/" target="_blank">tronlink.org</a></td>
+										<td><a href="javascript:if(confirm('https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-'" tppabs="https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-" target="_blank" lang="Please_refer_to_tutorial"></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/bitpie.png-v=1.0.0.8dadb9e" tppabs="https://j20aa.com/image/image/bitpie.png?v=1.0.0.8dadb9e"></td>
+										<td><a href="javascript:if(confirm('https://bitpie.com/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://bitpie.com/'" tppabs="https://bitpie.com/" target="_blank">bitpie.com</a></td>
+										<td><a href="javascript:if(confirm('https://j20aa.com/image/0019.html  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓëËüµÄÆôÊ¼µØÖ·ºÜÔ¶µÄÁ´½Ó¡£Èç¹ûÄãÔö´óÆôÊ¼µØÖ·ÓòÄÚÉî¶ÈÉèÖÃ, ¸ÃÎÄ¼þ½«±»¼ÓÈëÏÂÔØ¶ÓÁÐ¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://j20aa.com/image/0019.html'" tppabs="https://j20aa.com/image/0019.html" target="_blank" lang="Please_refer_to_tutorial"></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div data-num="2" class="item b2">
+							<h4 lang="Buying_USDT_and_TRX_at_Exchange"></h4>
+							<div class="body">
+								<table>
+									<tr>
+										<th style="width:30%" lang="Platform"></th>
+										<th style="width:30%" lang="Address"></th>
+										<th style="width:40%" lang="Tutorial"></th>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/gate.png-v=1.0.0.a6a560f" tppabs="https://j20aa.com/image/image/gate.png?v=1.0.0.a6a560f"></td>
+										<td><a href="javascript:if(confirm('https://www.gate.io/cn  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.gate.io/cn'" tppabs="https://www.gate.io/cn" target="_blank">gate.io</a></td>
+										<td><a href="javascript:if(confirm('https://www.gate.io/cn/help/guide  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.gate.io/cn/help/guide'" tppabs="https://www.gate.io/cn/help/guide" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial"></label><label class="mdiv" lang="Tutorial"></label></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/huobi.png-v=1.0.0.d2f4472" tppabs="https://j20aa.com/image/image/huobi.png?v=1.0.0.d2f4472"></td>
+										<td><a href="javascript:if(confirm('https://www.huobi.com/zh-cn/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.huobi.com/zh-cn/'" tppabs="https://www.huobi.com/zh-cn/" target="_blank">huobi.com</a></td>
+										<td><a href="javascript:if(confirm('https://www.huobi.com/support/zh-cn/list/360000010372  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.huobi.com/support/zh-cn/list/360000010372'" tppabs="https://www.huobi.com/support/zh-cn/list/360000010372" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial"></label><label class="mdiv" lang="Tutorial"></label></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/binance.png-v=1.0.0.8d1fde5" tppabs="https://j20aa.com/image/image/binance.png?v=1.0.0.8d1fde5"></td>
+										<td><a href="javascript:if(confirm('https://www.binance.com/zh-CN  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.binance.com/zh-CN'" tppabs="https://www.binance.com/zh-CN" target="_blank">binance.com</a></td>
+										<td><a href="javascript:if(confirm('https://academy.binance.com/zh/articles/binance-beginner-s-guide  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://academy.binance.com/zh/articles/binance-beginner-s-guide'" tppabs="https://academy.binance.com/zh/articles/binance-beginner-s-guide" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial"></label><label class="mdiv" lang="Tutorial"></label></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/okex.png-v=1.0.0.3f2e0d2" tppabs="https://j20aa.com/image/image/okex.png?v=1.0.0.3f2e0d2"></td>
+										<td><a href="javascript:if(confirm('https://www.okex.com/cn  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.okex.com/cn'" tppabs="https://www.okex.com/cn" target="_blank">okex.com</a></td>
+										<td><a href="javascript:if(confirm('https://www.okex.com/support/hc/zh-cn/sections/360000033031-%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.okex.com/support/hc/zh-cn/sections/360000033031-%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB'" tppabs="https://www.okex.com/support/hc/zh-cn/sections/360000033031-%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial"></label><label class="mdiv" lang="Tutorial"></label></a></td>
+									</tr>
+									<tr>
+										<td><img src="../zh-cn/zb.png-v=1.0.0.ac38243" tppabs="https://j20aa.com/image/image/zb.png?v=1.0.0.ac38243"></td>
+										<td><a href="javascript:if(confirm('https://www.zb.com/cn/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.zb.com/cn/'" tppabs="https://www.zb.com/cn/" target="_blank">zb.com</a></td>
+										<td><a href="javascript:if(confirm('https://www.zb.com/help/guides/1  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.zb.com/help/guides/1'" tppabs="https://www.zb.com/help/guides/1" target="_blank"><label class="pdiv" lang="Please_refer_to_tutorial"></label><label class="mdiv" lang="Please_refer_to_tutorial"></label></a></td>
+									</tr>
+								
+								</table>
+							</div>
+						</div>
+						<div data-num="3" class="item b3">
+							<h4 lang="Transfer_money_to_this_platform"></h4>
+							<div class="body">
+								<h5 class="pdiv" lang="Please_transfer_money_to_the_below"></h5>
+								<h5 class="mdiv" lang="Please_transfer_money_to_the_below"></h5>
+								<div class="comHash only hashChoice">
+								</div>
+								<div class="text">
+									<p lang="The_official_collecting_address"></p>
+									<span class="collectionAddress"></span>
+								</div>
+								<div class="copyBut" id="firstCopyBut" onclick='copy("#hashAddress","#firstCopyBut")' lang="Copy_with_one_click"></div>
+								<div class="qr">
+									<div class="collectionUrl" id="collectionUrl2"></div>
+									<i></i>
+								</div>
+							</div>
+						</div>
+						<div data-num="4" class="item b4">
+							<h4 lang="Automatic_payment_for_winning"></h4>
+							<div class="body">
+								<p lang="Your_money_will_return_to_your_account"></p>
+								<div class="icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<a id="why"></a>
+		<div class="block whyDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="" alt="" lang="whyTitleImgUrl">
+				<div class="show">
+					<div class="buts">
+						<ul>
+							<li data-num="1" class="b1 wow bounceIn" data-wow-delay="0.3s"><em><i></i></em><span lang="fair_and_open"></span></li>
+							<li data-num="2" class="b2 wow bounceIn" data-wow-delay="0.6s"><em><i></i></em><span lang="Safe_and_reliable"></span></li>
+							<li data-num="3" class="b3 wow bounceIn" data-wow-delay="0.9s"><em><i></i></em><span class="pdiv" lang="Minimalist_and_fast"></span><span class="mdiv" lang="easy_to_win"></span></li>
+							<li data-num="4" class="b4 wow bounceIn" data-wow-delay="1.2s"><em><i></i></em><span lang="One_to_one_service"></span></li>
+						</ul>
+					</div>
+					<div class="blocks wow fadeInUp" data-wow-delay="0.6s">
+						<div data-num="4" data-wow-delay="0.3s" class="item b4 wow fadeIn pdiv">
+							<h4 lang="One_to_one_service"></h4>
+							<div class="body">
+								<ul>
+									<li lang="One_on_one_explanation"></li>
+									<li lang="Multiple_methods_of_contacts"></li>
+								</ul>
+								<div class="connect">
+									<div class="email">
+										
+									</div>
+									<ul class="customerServiceList"></ul>
+									
+								</div>	
+							</div>
+						</div>
+						<div data-num="1" data-wow-delay="0.6s" class="item b1 wow fadeIn cur">
+							<h4 lang="All_gaming_process_is_fair_and_open"></h4>
+							<div class="body">
+								<ul>
+									<li lang="We_protect_everybody_right"></li>
+									<li lang="Block_hash_is_being_formed"></li>
+									<li lang="All_records_are_open"></li>
+								</ul>
+							</div>
+						</div>
+						<div data-num="2" data-wow-delay="0.9s" class="item b2 wow fadeIn">
+							<h4 lang="Safe_and_reliable"></h4>
+							<div class="body">
+								<ul>
+									<li lang="We_guarantee_our_customers"></li>
+									<li lang="No_need_for_realName_registration"></li>
+									<li lang="No_freezing_credit_card"></li>
+									<li lang="No_need_for_withdrawal_authentication"></li>
+									<li lang="No_limit_for_payment"></li>
+									<li lang="No_need_to_worry_about_funds"></li>
+								</ul>
+							</div>
+						</div>
+						<div data-num="3" data-wow-delay="1.2s" class="item b3 wow fadeIn">
+							<h4 lang="Minimalist_and_fast"></h4>
+							<div class="body">
+								<ul>
+									<li lang="We_seek_simplified_process"></li>
+									<li lang="Only_need_one_decentralized"></li>
+									<li lang="No_limits_of_any_gaming"></li>
+									<li lang="Automatically_returns"></li>
+								</ul>
+
+							</div>
+						</div>
+						<div data-num="4" data-wow-delay="1.5s" class="item b4 wow fadeIn">
+							<h4 lang="One_to_one_service"></h4>
+							<div class="body">
+								<ul>
+									<li lang="One_on_one_explanation"></li>
+									<li lang="Multiple_methods_of_contacts"></li>
+								</ul>
+								<div class="connect">
+									<div class="email">
+										
+									</div>
+									<ul class="customerServiceList">
+										
+									</ul>
+								</div>	
+							</div>
+						</div>
+						<div data-num="1" data-wow-delay="1.8s" class="item b1 wow fadeIn pdiv">
+							<h4 lang="All_gaming_process_is_fair_and_open"></h4>
+							<div class="body">
+								<ul>
+									<li lang="We_protect_everybody_right"></li>
+									<li lang="Block_hash_is_being_formed"></li>
+									<li lang="All_records_are_open"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<a id="exchange"></a>
+		<div class="block exchangeDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="" alt="" lang="exchangeTitleImgUrl">
+				<div class="rate wow fadeInUp" data-wow-delay="0.2s"><span lang="Current_exchange_rate"></span>ï¼š<i>loading...</i></div>
+				<div class="form wow fadeInLeft" data-wow-delay="0.5s">
+					<div class="type">
+						<ul>
+							<li data-type="usdt_to_trx" class="cur" lang="USDT_to_TRX"></li>
+							<li data-type="trx_to_usdt" lang="TRX_to_USDT"></li>							
+						</ul>
+					</div>
+					<div class="input b1"><input type="number"><span>USDT</span></div>
+					<div class="text" lang="Exchangeable"></div>
+					<div class="input b2"><input type="number"><span>TRX</span></div>
+					<button lang="Calculation"></button>
+				</div>
+				<div class="note wow fadeInRight" data-wow-delay="0.5s">
+					<div class="qrInfo">
+						<div class="text" lang="If_you_need_to_exchange_USDT"></div>						
+						<div class="qr pdiv">
+							<div class="exchangeUrl" id="exchangeUrl1"></div>
+							
+							<span lang="Scan_and_exchange"></span>
+						</div>
+					</div>
+					<div class="hashInfo">
+						<button id="exchangeCopyBut" onclick='copy("#exchangeHashAddress","#exchangeCopyBut")' lang="Copy"></button>
+						<h4 lang="Official_exchange_link"></h4>
+						<span id="exchangeHashAddress"></span>
+					</div>
+					<div class="qr mdiv">
+						
+						<div class="exchangeUrl" id="exchangeUrl2"></div>
+						<span lang="Scan_and_exchange"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+
+		
+		<a id="faq"></a>
+		<div class="block faqDiv">
+			<div class="mainDiv">
+				
+				<img class="title wow fadeInDown" src="" alt="" lang="faqTitleImgUrl">
+				<div class="list">
+					<ul>
+						<li class="wow fadeInUp">
+							<p lang="What_is_Block_hash"></p>
+							<div class="wow fadeInUp">
+								<span lang="Block_hash_is_the_DNA"></span>
+								<a href="javascript:if(confirm('https://baike.baidu.com/item/Hash/390310  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://baike.baidu.com/item/Hash/390310'" tppabs="https://baike.baidu.com/item/Hash/390310" target="_blank" lang="Click_to_see_more"></a>
+							</div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="What_is_block_chain"></p>
+							<div class="wow fadeInUp">
+								<span lang="Block_chain_is_a_shared_data_base"></span><br>
+								<a href="javascript:if(confirm('https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666'" tppabs="https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666" target="_blank" lang="Click_to_see_more"></a>
+							</div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="Centralized_wallet"></p>
+							<div class="wow fadeInUp">
+								<span lang="Ex_the_address_to_your_wallet"></span><br>
+								<a href="javascript:if(confirm('https://zhuanlan.zhihu.com/p/98203076  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://zhuanlan.zhihu.com/p/98203076'" tppabs="https://zhuanlan.zhihu.com/p/98203076" target="_blank" lang="Click_to_see_more"></a><br>
+							</div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="Why_I_can_win_the_lottery"></p>
+							<div class="wow fadeInUp" lang="Not_winning_the_lottery"></div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="Why_there_delay"></p>
+							<div class="wow fadeInUp">
+								<span lang="In_order_to_ensure"></span><br>
+								<a href="javascript:if(confirm('https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/articles/1_conception/why_blockchain_slow.html  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/articles/1_conception/why_blockchain_slow.html'" tppabs="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/articles/1_conception/why_blockchain_slow.html" target="_blank" lang="Click_to_see_more"></a>
+							</div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="Why_is_there_so_many_types"></p>
+							<div class="wow fadeInUp" lang="Many_known_chain"></div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+						<li class="wow fadeInUp">
+							<p lang="If_I_transfer_to_the_wrong_address"></p>
+							<div class="wow fadeInUp" lang="If_instead_of_USDT_TRC20"></div>
+							<button class="mdiv" lang="Expand"></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="tipDiv"></div>
+
+		
+		<div class="sideDiv pdiv">
+			<ul>
+				<li class="qr" data-type="qr"><i></i><span lang="Scan_code_transfer"></span></li>
+				<li class="account" data-type="account"><i></i><span lang="Account_transfer"></span></li>
+				<li class="service" data-type="service"><i></i><span lang="Contact"></span></li>
+			</ul>
+		</div>
+
+		
+		<div class="winMask"></div>
+		<div class="winDiv">
+			<div class="colse"></div>
+			
+			<div class="item qr">
+				<h2 lang="Scan_code_transfer"></h2>
+				<div class="body">
+					<div class="comHash only hashChoice">
+					</div>
+					<div class="qrcode">
+						<div class="modelQrcode" id="modelQrcode"></div>
+					</div>
+					
+					<span lang="Scan_code_transfer"></span>
+				</div>
+			</div>
+			
+			<div class="item account">
+				<h2 lang="Account_transfer"></h2>
+				<div class="body">
+					<div class="comHash only hashChoice">
+					</div>
+					<em class="collectionAddress"></em>
+					<button id="winCopyBut" onclick='copy("#hashAddress","#winCopyBut")' lang="Copy"></button>
+				</div>
+			</div>
+			
+			<div class="item service">
+				<h2 lang="One_to_one_service"></h2>
+				<div class="body">
+					<div class="email">
+					</div>
+					<ul class="customerServiceList">
+					</ul>
+				</div>
+			</div>
+			
+			<div class="item soft">
+				<h2 lang="Related_APP"></h2>
+				<div class="body">
+					<ul>
+						<li><strong lang="VPN_software_recommendation"></strong></li>
+						<li class="link">789VPNï¼š<a target="_blank" href="javascript:if(confirm('http://789vpn.com/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://789vpn.com/'" tppabs="http://789vpn.com/" lang="Download"></a><br></li>
+						<li class="link">ä¼˜é€”VPNï¼š<a target="_blank" href="javascript:if(confirm('https://yuutto.com/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://yuutto.com/'" tppabs="https://yuutto.com/" lang="Download"></a><br></li>
+						<li><strong lang="Other_APP_downloads"></strong></li>
+						<li class="link">Telegram <span lang="Client"></span>ï¼š<a target="_blank" href="javascript:if(confirm('https://telegram.org/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://telegram.org/'" tppabs="https://telegram.org/" lang="Download"></a><br></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<script src="../hc/en-us/articles/config.js-v=1.0.0.094b25e" tppabs="https://j20aa.com/image/js/config.js?v=1.0.0.094b25e" charset="utf-8"></script>
+		<script src="../hc/en-us/articles/mergeData.js-v=1.0.0.c28b171" tppabs="https://j20aa.com/image/js/mergeData.js?v=1.0.0.c28b171" charset="utf-8"></script>
+		<script src="../hc/en-us/articles/main.js-v=1.0.0.a27d52d" tppabs="https://j20aa.com/image/js/main.js?v=1.0.0.a27d52d" charset="utf-8"></script>
+		<script src="../hc/en-us/articles/api.js-v=1.0.0.5ebaf07" tppabs="https://j20aa.com/image/js/api.js?v=1.0.0.5ebaf07" charset="utf-8"></script>
+		<script>var wow=new WOW({boxClass:"wow",animateClass:"animated",offset:30,mobile:!0});wow.init()</script>
+	</body>
+</html>
