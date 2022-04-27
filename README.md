@@ -20,15 +20,15 @@
 
 
 ## 界面截图
-![首页](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![控制台](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![系统配置](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![会员管理](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![生成靓号](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![游戏记录](http://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![发放记录](http://file.ruclouds.com//i/2022/04/28/21dmak.png)
-![佣金记录](http://file.ruclouds.com//i/2022/04/28/21dkff.png)
-![用户前台](http://file.ruclouds.com//i/2022/04/28/21dmyq.png)
+![首页](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![控制台](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![系统配置](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![会员管理](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![生成靓号](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![游戏记录](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![发放记录](https://file.ruclouds.com//i/2022/04/28/21dmak.png)
+![佣金记录](https://file.ruclouds.com//i/2022/04/28/21dkff.png)
+![用户前台](https://file.ruclouds.com//i/2022/04/28/21dmyq.png)
 
 
 任何使用本源码从事商业活动，对别人和自己造成损失的，本人概不负责！
