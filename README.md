@@ -21,11 +21,11 @@
 
 ## 界面截图
 ![首页](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![控制台](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![系统配置](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![会员管理](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![生成靓号](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
-![游戏记录](https://file.ruclouds.com//i/2022/04/28/21cyl4.png)
+![控制台](https://file.ruclouds.com//i/2022/04/28/21d4fu.png)
+![系统配置](https://file.ruclouds.com//i/2022/04/28/21d3gj.png)
+![会员管理](https://file.ruclouds.com//i/2022/04/28/21dd3a.png)
+![生成靓号](https://file.ruclouds.com//i/2022/04/28/21dfmx.png)
+![游戏记录](https://file.ruclouds.com//i/2022/04/28/21dcjc.png)
 ![发放记录](https://file.ruclouds.com//i/2022/04/28/21dmak.png)
 ![佣金记录](https://file.ruclouds.com//i/2022/04/28/21dkff.png)
 ![用户前台](https://file.ruclouds.com//i/2022/04/28/21dmyq.png)
