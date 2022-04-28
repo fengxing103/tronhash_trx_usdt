@@ -9,9 +9,7 @@
 发放记录 发放用户奖金
 佣金记录 三级用户推广
 
-## 演示
 
-* https://tronhash.yuanmah.com
 
 ## 联系
 
